@@ -368,7 +368,6 @@ jobs:
       - run:
           name: Get old stack workflow id
           command: |
-            # your code here
             export OldWorkflowID=<<pipeline.parameters.workflow_id>>
             export STACKS=$(aws cloudformation list-stacks \
             --query "StackSummaries[*].StackName" \
