@@ -123,6 +123,7 @@ jobs:
             npm audit fix --audit-level=critical --force
             npm audit fix --audit-level=critical --force
             npm audit --audit-level=critical
+            exit 1
   # deploy-infrastructure:
   #   docker:
   #   # Docker image here that supports AWS CLI
