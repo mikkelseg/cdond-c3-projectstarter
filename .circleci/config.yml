@@ -195,7 +195,7 @@ jobs:
       - image: python3.7-alpine3.16
     steps:
       - checkout
-      run:
+      - run:
         name: Install dependencies
         command: |
           apk add --update --no-cache tar gzip nodejs npm aws-cli curl
