@@ -202,10 +202,7 @@ jobs:
           command: |
             cd backend
             npm install
-            npm install typeorm>0.2.25
-            npm install glob-parent>5.1.2
-            npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical --force
+            npm update
             npm run build
             npm run migrations >> migrations.txt
       - run:
